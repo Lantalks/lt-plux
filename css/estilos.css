@@ -1,7 +1,8 @@
 @font-face {
-	font-family: 'Open Sans';
-	src:(../fonts/OpenSans-Regular.ttf) format('truetype');
+	font-family: "Open Sans";
 	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 
@@ -13,32 +14,53 @@
 	color: white;
 }
 
-body {
+html {
 	background: url(../img/ws_The_Road.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: black;	
+	background-color: #000;	
+	background-position: fixed;
+	height: 100%;
 }
 
-
+#brand{
+	position: static;
+	width: 594px;
+	height: 139px;
+	background: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px auto;
+}
+@media all and (max-width: 600px) {
+	#brand{
+	    width: 350px;
+    	height: 75px;
+	}
+}
+@media all and (max-width: 480px) {
+	#brand{
+		width: 270px;
+		height: 60px;
+	}
+}
 
 #contenedorgeneral {
-	position: absolute;
-	left: 50%;
 	top: 50%;
-	margin-left: -297px;
-	margin-top: -208.4px; 
+	margin: 10% auto 0px auto;
+	max-width: 600px;
+	text-align: center;
 }
 
-#eslogan {
-	font-family: Arial, Open Sans;
+h3#eslogan {
 	font-size: 20px;
 	font-style: italic;
 	letter-spacing: 6px;
+	text-transform: uppercase;
 }
 
 
-#redes_sociales li {
+section#redes-sociales li {
 	display: inline-block;
 	list-style: none;
 	text-decoration: none;
