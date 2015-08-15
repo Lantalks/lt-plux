@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'Open Sans';
+	src:(../fonts/OpenSans-Regular.ttf) format('truetype');
+	font-weight: normal;
+}
+
+
+* {
+	margin: 20;
+	padding: 0;
+	text-align: center;
+	font-family: 'Open Sans', Segoe UI, Arial, sans-serif;
+	color: white;
+}
+
+body {
+	background: url(../img/ws_The_Road.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;	
+}
+
+
+
+#contenedorgeneral {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -297px;
+	margin-top: -208.4px; 
+}
+
+#eslogan {
+	font-family: Arial, Open Sans;
+	font-size: 20px;
+	font-style: italic;
+	letter-spacing: 6px;
+}
+
+
+#redes_sociales li {
+	display: inline-block;
+	list-style: none;
+	text-decoration: none;
+}
