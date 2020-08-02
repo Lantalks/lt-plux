@@ -1,0 +1,71 @@
+@import 'bootstrap/bootstrap';
+@import 'template/header';
+@import 'template/footer';
+
+@font-face {
+	font-family: "Gotham";
+	font-weight: lighter;
+	font-style: normal;
+	src: url("../fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gotham";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../fonts/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Gotham";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/Gotham-Book.otf") format("opentype");
+}
+
+* {
+	font-family: 'Gotham', 'Montserrat', 'Open Sans', Tahoma, Verdana, sans-serif;
+}
+
+html {
+	background-color: #012245;
+}
+
+section {
+	&.bg-sky {
+		background-color: #7BB3CE;
+		color: #012245;
+	}
+	&#streaming {
+		background-color: #101E27;
+		color: #7BB3CE;
+		#btn-toggle-streamings {
+			border-radius: 0px;
+			box-shadow: none;
+			font-size: 12px;
+			letter-spacing: 1.5px;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+		#player-placeholder {
+			background-color: rgba(0, 0, 0, 0.25);
+			border-radius: 100px;
+			margin-bottom: 7px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 54px;
+			max-width: 300px;
+			width: 100%;
+		}
+	}
+	&#socials {
+		background-color: #535F68;
+		color: white;
+		.placeholder-block {
+			background-color: rgba(0, 0, 0, 0.25);
+			color: transparent;
+			display: block;
+			min-height: 600px;
+		}
+	}
+}

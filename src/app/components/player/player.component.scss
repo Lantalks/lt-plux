@@ -1,0 +1,31 @@
+#player {
+	#player-container {
+		display: flex;
+		height: 75px;
+		#player-control {
+			width: 75px;
+		}
+		#player-info {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: calc(100% - 75px);
+			#program-type {
+				color: #fff;
+				font-size: 14px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				width: 100%;
+			}
+			#program-name {
+				color: #fff;
+				font-size: 24px;
+				font-weight: 700;
+				margin-bottom: 0;
+				width: 100%;
+			}
+		}
+	}
+}

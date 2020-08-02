@@ -1,14 +1,10 @@
-# Plux Radio - Página web v1.0
-Primera versión del sitio web de Plux radio. 
+# Plux Radio - Sitio web
+Repositorio del sitio web de la radio. Desarrollado en Angular desde la versión v8, corriendo en la versión más reciente posible.
 
-# Changelog
+## Montaje
 
-## v1.0.1 
-- Agregado "README.md". 
-- Adaptación a responsive. 
-- Algunas etiquetas "meta" añadidas. 
-- Correcciones en algunas etiquetas. 
-- Estilos refinados. 
+Correr `ng serve`, el sitio se montará en `http://localhost:4200/` y se irá actualizando por cada cambio de archivo que detecte.
 
-## v1.0 
-- Carga inicial. 
+## Compilado para producción
+
+Correr `ng build` para compilarlo. El sitio preparado estará dentro de `dist/`. No olvidarse del flag `--prod`.

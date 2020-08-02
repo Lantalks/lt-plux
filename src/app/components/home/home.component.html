@@ -1,0 +1,40 @@
+<section id="streaming" class="bg-dark-sky text-center py-4">
+	<div class="container">
+		<h2>Transmisión en vivo</h2>
+		<!--a href="#" id="btn-toggle-streamings" class="btn btn-outline-primary">Sólo audio</a-->
+		<div id="streaming-content">
+			<div *ngIf="!streaming_type" class="py-3 py-lg-5">
+				<div id="player-placeholder"></div>
+			</div>
+			<div *ngIf="(streaming_type === 'audio') && streaming_url" class="py-3 py-lg-5">
+				<audio controls>
+					<source [src]="streaming_url" type="audio/aac">
+					Actualizá tu navegador!
+				</audio>
+			</div>
+			<div *ngIf="(streaming_type === 'youtube') && streaming_url" class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" [src]="'https://www.youtube.com/embed/' + streaming_url" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="socials" class="py-4">
+	<div id="socials-bar">
+		<div class="container"></div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<a class="twitter-timeline placeholder-block" data-width="500" data-height="600" data-theme="dark" href="https://twitter.com/pluxradio" target="_blank">
+					<div class="button">Twitter de Plux</div>
+				</a>
+			</div>
+			<div class="col-lg-6">
+				<div id="fb-root"></div>
+				<div class="fb-page placeholder-block" data-href="https://www.facebook.com/pluxradio/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+					<blockquote cite="https://www.facebook.com/pluxradio/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pluxradio/">Plux</a></blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
